@@ -1,5 +1,9 @@
 function reverseString(str) {
-  // type your code here
+  let rev = ""
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i]
+  }
+  return rev
 }
 
 if (require.main === module) {
@@ -17,3 +21,7 @@ module.exports = reverseString;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// Takes in a string
+// Loop over every character in string
+// 
